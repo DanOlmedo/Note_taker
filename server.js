@@ -44,7 +44,7 @@ app.post('/api/notes', (req,res) => {
 })
 
 app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname,'./develop/public/index.html'))
+    res.sendFile(path.join(__dirname,'./develop/public/assets/index.html'))
 })
 
 app.listen(process.env.PORT || port, () => console.log(`App listening at https://localhost:${port}`));
